@@ -1,122 +1,114 @@
-🧠📊 Inmax Avisadores – Plataforma de Gestión de Campañas Publicitarias
+---
+# Inmax Avisadores – Plataforma de Gestión de Campañas Publicitarias
 
-Inmax Avisadores es una plataforma web desarrollada en colaboración con Alloxentric, orientada a la gestión, monitoreo y optimización de campañas publicitarias dentro de la red social Inmax.
-El sistema permite a los avisadores crear campañas segmentadas, administrar presupuestos, visualizar métricas clave y analizar interacciones de usuarios para una mejor toma de decisiones.
+**Descripción**
+Inmax Avisadores es una plataforma web desarrollada en colaboración con **Alloxentric**, orientada a la **gestión, monitoreo y optimización de campañas publicitarias** dentro de la red social **Inmax**. El sistema permite a los avisadores:
+- Crear campañas segmentadas.
+- Administrar presupuestos.
+- Visualizar métricas clave.
+- Analizar interacciones de usuarios para una mejor toma de decisiones.
 
-La plataforma integra tecnologías modernas como Vue.js, FastAPI, MongoDB/PostgreSQL, Docker y Keycloak, logrando una solución escalable, segura y preparada para el crecimiento futuro de la red.
+La plataforma integra tecnologías modernas como **Vue.js, FastAPI, MongoDB/PostgreSQL, Docker y Keycloak**, logrando una solución **escalable, segura y preparada para el crecimiento futuro** de la red.
 
-🚀 Características principales
+---
 
-Creación y administración de campañas con segmentación por intereses y ubicación.
+## 🚀 Características Principales
+- Creación y administración de campañas con **segmentación por intereses y ubicación**.
+- Monitoreo de métricas como **impresiones, clics, CTR y engagement**.
+- Gestión de avisadores y **autenticación segura** mediante **Keycloak y JWT**.
+- **Dashboard interactivo** para visualizar datos relevantes en tiempo real.
+- Arquitectura **modular y escalable** con contenedores **Docker**.
+- Bases de datos híbridas:
+  - **PostgreSQL** para datos estructurados.
+  - **MongoDB** para métricas e interacciones.
 
-Monitoreo de métricas como impresiones, clics, CTR y engagement.
+---
 
-Gestión de avisadores y autenticación segura mediante Keycloak y JWT.
+## 🧱 Tecnologías Utilizadas
 
-Dashboard interactivo para visualizar datos relevantes en tiempo real.
+| Área          | Tecnologías                     |
+|---------------|----------------------------------|
+| **Backend**   | FastAPI (Python), Keycloak (OAuth2 / JWT), PostgreSQL, MongoDB |
+| **Frontend**  | Vue.js (próxima fase)            |
+| **Infraestructura** | Docker & Docker Compose, Nginx (opcional), Visual Studio Code |
 
-Arquitectura modular y escalable con contenedores Docker.
+---
 
-Bases de datos híbridas:
-
-PostgreSQL para datos estructurados.
-
-MongoDB para métricas e interacciones.
-
-🧱 Tecnologías utilizadas
-Backend
-
-FastAPI (Python)
-
-Keycloak (OAuth2 / JWT)
-
-PostgreSQL
-
-MongoDB
-
-Frontend
-
-Vue.js (próxima fase)
-
-Infraestructura
-
-Docker & Docker Compose
-
-Nginx (opcional)
-
-Visual Studio Code
-
-📂 Estructura del proyecto
+## 📂 Estructura del Proyecto
+```bash
 Inmax/
 ├── Inmax-api/          # Backend en FastAPI
 ├── Inmax-bd/           # Configuración de bases de datos
 ├── docker-compose.yml  # Orquestación de servicios
 └── README.md           # Documentación del proyecto
+```
 
-⚙️ Instalación y ejecución
-1️⃣ Clonar el repositorio
-git clone https://github.com/farinhadiego22/inmax.git
-cd inmax
+---
 
-2️⃣ Levantar los servicios con Docker
-docker compose up --build
+## ⚙️ Instalación y Ejecución
 
-3️⃣ Acceder a la API de FastAPI
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/farinhadiego22/inmax.git
+   cd inmax
+   ```
 
-👉 http://localhost:8000/docs
+2. **Levantar los servicios con Docker**:
+   ```bash
+   docker compose up --build
+   ```
 
-Aquí encontrarás la documentación interactiva de la API (Swagger UI).
+3. **Acceder a la API de FastAPI**:
+   - [Swagger UI - Documentación interactiva](http://localhost:8000/docs)
 
-4️⃣ Verificar la base de datos
+4. **Verificar la base de datos**:
+   - Usar **MongoDB Compass** o **Mongo Express** (si está configurado en el `docker-compose`).
 
-Puedes revisar MongoDB con:
+---
 
-MongoDB Compass
+## 📌 Estado Actual del Proyecto (Fase 1)
 
-Mongo Express (si lo agregas al docker-compose)
+### ✅ **Implementado**
+- Backend funcional en **FastAPI**.
+- Conexión estable a **MongoDB y PostgreSQL**.
+- Endpoints para:
+  - Login y autenticación.
+  - Gestión de avisadores.
+  - Creación y administración de campañas.
+- Arquitectura en **Docker** completamente operativa.
 
-📌 Estado actual del proyecto (Fase 1)
-✔ Implementado
+### 🔄 **En Desarrollo**
+- Frontend en **Vue.js**.
+- Dashboards avanzados de métricas.
+- Reportes detallados y exportables.
+- KPIs en tiempo real.
+- Optimización de seguridad con roles avanzados.
 
-Backend funcional en FastAPI.
+---
 
-Conexión estable a MongoDB y PostgreSQL.
+## 🧠 Contexto del Proyecto
+Este sistema surge como una **propuesta de mejora** para la red social **Inmax**, desarrollada por **Alloxentric**. Su objetivo es proporcionar una plataforma robusta que permita a los avisadores:
+- Crear campañas segmentadas.
+- Monitorear interacciones.
+- Obtener información clave para optimizar decisiones de marketing.
 
-Endpoints para:
+La solución fue desarrollada bajo la metodología ágil **Scrumban**, garantizando **flexibilidad, iteración continua y alineación con los requerimientos del cliente**.
 
-Login y autenticación
+---
 
-Gestión de avisadores
+## 🧑‍💻 Equipo de Desarrollo
 
-Creación y administración de campañas
+| Rol                     | Integrante          |
+|-------------------------|---------------------|
+| **Jefe de Proyecto**    | Diego Fariña        |
+| **Investigador**        | Martín Albizú       |
+| **Documentador**        | Nicolas Catro       |
+| **Analista/Programador**| Nicolas Gonzales    |
 
-Arquitectura en Docker completamente operativa.
+---
 
-🔄 En desarrollo
+## 📜 Licencia
+**MIT © 2025** – Libre para uso, modificación y distribución.
+---
 
-Frontend en Vue.js
 
-Dashboards avanzados de métricas
-
-Reportes detallados y exportables
-
-KPIs en tiempo real
-
-Optimización de seguridad con roles avanzados
-
-🧠 Contexto del proyecto
-
-Este sistema surge como una propuesta de mejora para la red social Inmax, desarrollada por Alloxentric.
-Su objetivo es proporcionar una plataforma robusta que permita a los avisadores crear campañas segmentadas, monitorear interacciones y obtener información clave para optimizar decisiones de marketing.
-
-La solución fue desarrollada bajo la metodología ágil Scrumban, garantizando flexibilidad, iteración continua y alineación con los requerimientos reales del cliente.
-
-🧑‍💻 Equipo de desarrollo
-Rol	Integrante
-👨‍💻 Jefe de Proyecto	Diego Fariña
-🔍 Investigador	Martín Albizú
-📝 Documentador	Nicolas Catro
-🛠️ Analista / Programador	Nicolas Gonzales
-📜 Licencia
-
-MIT © 2025 – Libre para uso, modificación y distribución.
