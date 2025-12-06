@@ -64,28 +64,6 @@ Inmax/
 4. **Verificar la base de datos**:
    - Usar **MongoDB Compass** o **Mongo Express** (si está configurado en el `docker-compose`).
 
----
-
-## 📌 Estado Actual del Proyecto (Fase 1)
-
-### ✅ **Implementado**
-- Backend funcional en **FastAPI**.
-- Conexión estable a **MongoDB y PostgreSQL**.
-- Endpoints para:
-  - Login y autenticación.
-  - Gestión de avisadores.
-  - Creación y administración de campañas.
-- Arquitectura en **Docker** completamente operativa.
-
-### 🔄 **En Desarrollo**
-- Frontend en **Vue.js**.
-- Dashboards avanzados de métricas.
-- Reportes detallados y exportables.
-- KPIs en tiempo real.
-- Optimización de seguridad con roles avanzados.
-
----
-
 ## 🧠 Contexto del Proyecto
 Este sistema surge como una **propuesta de mejora** para la red social **Inmax**, desarrollada por **Alloxentric**. Su objetivo es proporcionar una plataforma robusta que permita a los avisadores:
 - Crear campañas segmentadas.
@@ -110,5 +88,6 @@ La solución fue desarrollada bajo la metodología ágil **Scrumban**, garantiza
 ## 📜 Licencia
 **MIT © 2025** – Libre para uso, modificación y distribución.
 ---
+
 
 
